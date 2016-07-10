@@ -16,10 +16,10 @@
  */
 // write your code here
 
-
-
-
-
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 /*: question2
@@ -28,8 +28,10 @@
 // write your code here
 
 
-
-
+let numDaysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+for (index, day) in numDaysOfTheWeek.enumerate() {
+    print("\(day) is \(index + 1) in this array")
+}
 
 
 
@@ -38,9 +40,12 @@
  */
 // write your code here
 
-
-
-
+let emptyArray : [String] = []
+if emptyArray.isEmpty {
+    print("I feel so empty inside 😢")
+} else {
+    print("I'm full")
+}
 
 
 
@@ -52,8 +57,12 @@
 
 
 
-
-
+let reverseEmptyArray : [String] = []
+if !reverseEmptyArray.isEmpty {
+    print("I'm good")
+} else {
+    print("Fill me up... before you go go")
+}
 
 
 
@@ -64,9 +73,7 @@
 // write your code here
 
 
-
-
-
+print(daysOfTheWeek.count)
 
 
 
@@ -75,9 +82,11 @@
  */
 // write your code here
 
-
-
-
+daysOfTheWeek.append("Saturday")
+daysOfTheWeek.append("Sunday")
+for (index, day) in daysOfTheWeek.enumerate() {
+    print("\(index + 1): \(day)")
+}
 
 
 
@@ -86,9 +95,8 @@
  */
 // write your code here
 
-
-
-
+daysOfTheWeek.removeAtIndex(6)
+daysOfTheWeek.insert("Sunday", atIndex: 0)
 
 
 
@@ -98,8 +106,10 @@
  */
 // write your code here
 
-
-
+for day in daysOfTheWeek {
+    var day = day.lowercaseString
+    print(day)
+}
 
 
 
@@ -111,8 +121,10 @@
 // write your code here
 
 
-
-
+if daysOfTheWeek.count > 5 {
+    daysOfTheWeek.removeLast(2)
+}
+print(daysOfTheWeek)
 
 
 //: Check here on the solution branch for a link to the solutions
